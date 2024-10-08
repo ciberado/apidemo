@@ -53,7 +53,7 @@ app.UseStatusCodePages(context => {
 app.Logger.LogInformation("Adding Routes.");
 
 
-app.MapGet("/health", () =>
+app.MapGet("/", () =>
 {
     app.Logger.LogInformation("All systems running.");
 })
